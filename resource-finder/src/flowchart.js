@@ -31,15 +31,15 @@ const Flowchart = () => {
     <ReactFlow
       nodes={nodes}
       edges={edges}
-      onNodesChange={onNodesChange}
-      onEdgesChange={onEdgesChange}
+      // onNodesChange={onNodesChange}
+      // onEdgesChange={onEdgesChange}
     //   onConnect={onConnect}
-      onConnectStart={onConnectStart}
+      // onConnectStart={onConnectStart}
       onInit={onInit}
       fitView
       attributionPosition="top-right"
     >
-      <MiniMap
+      {/* <MiniMap
         nodeStrokeColor={(n) => {
           if (n.style?.background) return n.style.background;
           if (n.type === "input") return "#0041d0";
@@ -54,7 +54,7 @@ const Flowchart = () => {
           return "#fff";
         }}
         nodeBorderRadius={2}
-      />
+      /> */}
       <Controls />
       <Background color="#aaa" gap={16} />
     </ReactFlow>

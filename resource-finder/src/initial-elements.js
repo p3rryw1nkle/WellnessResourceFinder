@@ -1,6 +1,30 @@
 import React from "react";
 import { MarkerType } from "reactflow";
 
+// create a style class for 'question' nodes
+export const questionNodeStyle = {
+  background: "#81c9e6",
+  color: "#333",
+  border: "1px solid #222138",
+  width: 180
+};
+
+// create a style class for 'answer' nodes
+export const answerNodeStyle = {
+  background: "#E6e281",
+  color: "#333",
+  border: "1px solid #222138",
+  width: 180
+};
+
+// create a style class for 'resource' nodes
+export const resourceNodeStyle = {
+  background: "#81e691",
+  color: "#333",
+  border: "1px solid #222138",
+  width: 180
+};
+
 export const nodes = [
   {
     id: "1",
@@ -14,6 +38,7 @@ export const nodes = [
     },
     position: { x: 250, y: 0 },
     interactive: false,
+    style: questionNodeStyle
   },
   {
     id: "2",
@@ -26,6 +51,7 @@ export const nodes = [
     },
     position: { x: -100, y: 100 },
     interactive: false,
+    style: answerNodeStyle
   },
   {
     id: "3",
@@ -44,6 +70,7 @@ export const nodes = [
       width: 180
     },
     interactive: false,
+    style: answerNodeStyle
   },
   {
     id: "4",
@@ -52,6 +79,7 @@ export const nodes = [
       label: "Physical Wellness"
     },
     interactive: false,
+    style: answerNodeStyle
   },
   {
     id: "5",
@@ -60,6 +88,7 @@ export const nodes = [
     },
     position: { x: 500, y: 100 },
     interactive: false,
+    style: answerNodeStyle
   },
 //   {
 //     id: "6",
