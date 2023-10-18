@@ -81,22 +81,24 @@ export const nodes = [
   },
   {
     id: '6',
-    type: 'resource',
+    type: 'output',
     data: {
       label: 'Academic Live Care',
     },
     className: 'circle',
+    websiteLink: 'https://academiclivecare.com/',
     fileName: 'AcademicLiveCare.pdf',
     style: resourceNodeStyle,
     position: { x: 400, y: 200 },
   },
   {
     id: '7',
-    type: 'resource',
+    type: 'output',
     data: {
       label: 'Counseling Center',
     },
     className: 'circle',
+    websiteLink: 'https://www.mines.edu/counseling-center/',
     fileName: 'CounselingCenter.pdf',
     style: resourceNodeStyle,
     position: { x: 150, y: 200 },

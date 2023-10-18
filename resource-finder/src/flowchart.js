@@ -22,6 +22,11 @@ const onNodeDoubleClick = (event, node) => {
   window.open("AcademicLiveCare.pdf", "_blank");
 };
 
+const openPage = (event, node) => {
+  const link = node.websiteLink
+  window.open(link, '_blank');
+}
+
 const downloadPDF = (event, node) => {
   const link = document.createElement("a");
 
@@ -31,8 +36,11 @@ const downloadPDF = (event, node) => {
   link.href = "AcademicLiveCare.pdf";
   link.download = "AcademicLiveCare.pdf";
 
+  const website = node.websiteLink
   link.href = node.fileName
   link.download = node.fileName
+
+  window.open(website, '_blank');
 
   document.body.appendChild(link);
   link.click();
@@ -53,6 +61,8 @@ const Flowchart = () => {
       // onConnect={onConnect}
       // onConnectStart={onConnectStart}
       onNodeDoubleClick={downloadPDF}
+      // onElementClick={openPage}
+      // onClick={openPage}
       onInit={onInit}
       fitView
       attributionPosition="top-right"
