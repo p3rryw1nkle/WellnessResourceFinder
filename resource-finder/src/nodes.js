@@ -31,11 +31,7 @@ export const nodes = [
     id: "1",
     type: "input",
     data: {
-      label: (
-        <>
-          What do you need help with?
-        </>
-      )
+      label: "What do you need help with?"
     },
     position: { x: 250, y: 0 },
     interactive: false,
@@ -44,11 +40,7 @@ export const nodes = [
   {
     id: "2",
     data: {
-      label: (
-        <>
-          Mental Health
-        </>
-      )
+      label: "Mental Health"
     },
     position: { x: -100, y: 100 },
     interactive: false,
@@ -57,11 +49,7 @@ export const nodes = [
   {
     id: "3",
     data: {
-      label: (
-        <>
-          Academic/Career Advising
-        </>
-      )
+      label: "Academic/Career Advising"
     },
     position: { x: 100, y: 100 },
     style: {
@@ -93,19 +81,25 @@ export const nodes = [
   },
   {
     id: '6',
-    type: 'output',
+    type: 'resource',
     data: {
-      label: 'link',
+      label: 'Academic Live Care',
     },
-    link: 'https://reactflow.dev',
     className: 'circle',
+    fileName: 'AcademicLiveCare.pdf',
     style: resourceNodeStyle,
     position: { x: 400, y: 200 },
-    // link to a webpage
-    target: 'test',
-
-    // sourcePosition: Position.Right,
-    // targetPosition: Position.Left,
+  },
+  {
+    id: '7',
+    type: 'resource',
+    data: {
+      label: 'Counseling Center',
+    },
+    className: 'circle',
+    fileName: 'CounselingCenter.pdf',
+    style: resourceNodeStyle,
+    position: { x: 150, y: 200 },
   },
 //   {
 //     id: "6",
