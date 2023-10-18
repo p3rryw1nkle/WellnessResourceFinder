@@ -1,5 +1,6 @@
 import React from "react";
-import { MarkerType } from "reactflow";
+import { MarkerType, Position } from 'reactflow';
+
 
 // create a style class for 'question' nodes
 export const questionNodeStyle = {
@@ -89,6 +90,22 @@ export const nodes = [
     position: { x: 500, y: 100 },
     interactive: false,
     style: answerNodeStyle
+  },
+  {
+    id: '6',
+    type: 'output',
+    data: {
+      label: 'link',
+    },
+    link: 'https://reactflow.dev',
+    className: 'circle',
+    style: resourceNodeStyle,
+    position: { x: 400, y: 200 },
+    // link to a webpage
+    target: 'test',
+
+    // sourcePosition: Position.Right,
+    // targetPosition: Position.Left,
   },
 //   {
 //     id: "6",

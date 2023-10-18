@@ -8,16 +8,36 @@ import ReactFlow, {
   useEdgesState
 } from "reactflow";
 import "reactflow/dist/style.css";
+import fileDownload from 'js-file-download';
+import axios from 'axios';
 
 import {
   nodes as initialNodes,
   edges as initialEdges
-} from "./initial-elements";
+} from "./nodes";
 
 const onInit = (reactFlowInstance) =>
   console.log("flow loaded:", reactFlowInstance);
 
 const onConnectStart = () => false;
+
+const onNodeDoubleClick = (event, node) => {
+  window.open("../pdfs/AcademicLiveCare.pdf", "_blank");
+};
+
+const downloadPDF = () => {
+  const link = document.createElement("a");
+
+  // log the current path
+  console.log(window.location.pathname);
+
+  link.href = "./resource-finder/src/pdfs/AcademicLiveCare.pdf";
+  link.download = "AcademicLiveCare.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
 
 const Flowchart = () => {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
@@ -35,6 +55,7 @@ const Flowchart = () => {
       // onEdgesChange={onEdgesChange}
     //   onConnect={onConnect}
       // onConnectStart={onConnectStart}
+      onNodeDoubleClick={downloadPDF}
       onInit={onInit}
       fitView
       attributionPosition="top-right"
@@ -56,7 +77,7 @@ const Flowchart = () => {
         nodeBorderRadius={2}
       /> */}
       <Controls />
-      <Background color="#aaa" gap={16} />
+      {/* <Background color="#aaa" gap={16} /> */}
     </ReactFlow>
   );
 };
