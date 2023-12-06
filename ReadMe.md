@@ -80,10 +80,10 @@ If the tutorial is no longer available here is a step-by-step guide:
 
 ### Terms
 
-Git - a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development.
-Node.js - JavaScript runtime environment
-React - Tool used for building websites. 'React project' means a website that was built using React.
-VS Code - Application used to edit code
+  - Git : a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development.
+  - Node.js : JavaScript runtime environment
+  - React : Tool used for building websites. 'React project' means a website that was built using React.
+  - VS Code : Application used to edit code
 
 ### Troubleshooting
 
