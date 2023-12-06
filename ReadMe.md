@@ -70,12 +70,20 @@ If the tutorial is no longer available here is a step-by-step guide:
 
 3. **Push Your Changes:**
     - Type `git push` and press `Enter`. This command uploads your changes to GitHub.
+  
+### Deploy to GitHub Pages
+
+1. **Run `git run deploy`
+    - This will take the code we've published and compile it to the web, so it's now live at https://p3rryw1nkle.github.io/WellnessResourceFinder/
 
     *Note: If you're pushing to a repository for the first time or if your credentials are not set up, you might be prompted to enter your GitHub username and password. This is provided in the PeerEd logins information document*
 
 ### Terms
 
-React - 
+Git - a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development.
+Node.js - JavaScript runtime environment
+React - Tool used for building websites. 'React project' means a website that was built using React.
+VS Code - Application used to edit code
 
 ### Troubleshooting
 
