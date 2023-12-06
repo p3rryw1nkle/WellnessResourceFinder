@@ -1,6 +1,6 @@
 # Overview
 
-Here's a step-by-step guide that explains how to clone a GitHub repository containing a React project, build it, and launch the website. 
+Here's a step-by-step guide that explains how to clone this GitHub repository containing the React (website) project, build it, and launch the website. 
 
 ### Prerequisites
 
