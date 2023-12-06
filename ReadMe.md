@@ -32,7 +32,7 @@ If the tutorial is no longer available here is a step-by-step guide:
 1. **Navigate to resource-finder folder**
    - Open up an integrated terminal within VS Code. I'm not sure about windows, but on Mac you click 'terminal > new terminal' at the top of the screen
    - Type `cd resource-finder` to move inside of the resource-finder folder. This is where the React project is stored.
-   - *If this doesn't work you may already be inside of the resouce-finder folder. Type `pwd` (print working directory) and hit enter. It will display your current path, resource-finder should be at the end.
+   - *If this doesn't work you may already be inside of the resouce-finder folder. Type `pwd` (print working directory) and hit enter. It will display your current path, resource-finder should be at the end.*
 
 2. **Install Dependencies:**
     - Inside the same terminal/command window type `npm install` and press `Enter`. This installs all the necessary dependencies for the React project.
@@ -71,12 +71,13 @@ If the tutorial is no longer available here is a step-by-step guide:
 3. **Push Your Changes:**
     - Type `git push` and press `Enter`. This command uploads your changes to GitHub.
   
+   *Note: If you're pushing to a repository for the first time or if your credentials are not set up, you might be prompted to enter your GitHub username and password. This is provided in the PeerEd logins information document*
+
+  
 ### Deploy to GitHub Pages
 
 1. **Run `git run deploy`
     - This will take the code we've published and compile it to the web, so it's now live at https://p3rryw1nkle.github.io/WellnessResourceFinder/
-
-    *Note: If you're pushing to a repository for the first time or if your credentials are not set up, you might be prompted to enter your GitHub username and password. This is provided in the PeerEd logins information document*
 
 ### Terms
 
