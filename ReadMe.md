@@ -76,7 +76,7 @@ If the tutorial is no longer available here is a step-by-step guide:
   
 ### Deploy to GitHub Pages
 
-1. **Run `git run deploy`
+1. **Run `git run deploy`**
     - This will take the code we've published and compile it to the web, so it's now live at https://p3rryw1nkle.github.io/WellnessResourceFinder/
 
 ### Terms
