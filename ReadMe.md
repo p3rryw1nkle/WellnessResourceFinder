@@ -71,7 +71,7 @@ If the tutorial is no longer available here is a step-by-step guide:
 3. **Push Your Changes:**
     - Type `git push` and press `Enter`. This command uploads your changes to GitHub.
 
-    *Note: If you're pushing to a repository for the first time or if your credentials are not set up, you might be prompted to enter your GitHub username and password. This is provided in the PeerEd docs*
+    *Note: If you're pushing to a repository for the first time or if your credentials are not set up, you might be prompted to enter your GitHub username and password. This is provided in the PeerEd logins information document*
 
 ### Terms
 
